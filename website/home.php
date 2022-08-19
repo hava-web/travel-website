@@ -15,14 +15,39 @@
 </head>
 <body>
 <section class="header">
-    <a href="home.php" class="logo">Travel.</a>
+    <a href="home.php" class="logo">Travel.</a> 
     <nav class="navbar">
         <a href="home.php">Home</a>
         <a href="about.php">About</a>
         <a href="package.php">Package</a>
         <a href="book.php">Book</a>
+        <!-- <div class="user">
+        <a href="login.php" class="user-btn">Login</a>
+        <a href="login.php" class="user-btn">sign up</a>
+        </div> -->
+  <?php
+  session_start();
+    if(isset($_SESSION['username']))
+    {
+        echo
+        '
+        <div class="user">
+        <a href="" class="user-btn">'.$_SESSION['username'].'</a>
+        <a href="logout.php" class="user-btn">Logout</a>
+        </div>   ';
+    }
+    else
+    {
+      echo
+      '
+      <div class="user">
+        <a href="login.php" class="user-btn">Login</a>
+        <a href="login.php" class="user-btn">sign up</a>
+        </div>';
+    }
+  ?>
+        
     </nav>
-
     <div id="menu-btn" class="fas fa-bars"></div>
 </section>
 <!-- header section end -->

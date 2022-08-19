@@ -123,6 +123,20 @@ section
     margin-left: 2rem;
     color: var(--black);
 }
+.header .navbar .user
+{
+    display: inline-block;
+    margin-left: 4rem ;
+    border: 1px solid --white;
+    background: var(--main-color);
+    padding: 1rem;
+    text-align: center;
+}
+.header .navbar .user .user-btn:hover
+{
+    color: var(--white);
+}
+
 .header .navbar a:hover
 {
     color: var(--main-color);
