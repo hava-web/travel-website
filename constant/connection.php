@@ -2,7 +2,7 @@
   define('LOCALHOST','localhost');
   define('DB_USERNAME','root');
   define('DB_PASSWORD','');
-  define('DB_NAME','book_db');
+  define('DB_NAME','book');
 
 
   $connection = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error());
