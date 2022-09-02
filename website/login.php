@@ -85,7 +85,7 @@ require_once('../constant/connection.php');
                     <a href="#" class="forgot">Forgot Password</a>
                 </form>
                 <?php
-                 if(empty($_SESSION['user_id'])){echo'<p class="error">'.$error_msg.'</p>'; ?>
+                 if(empty($_SESSION['user_id']) || !isset($_POST['login-btn'])){echo'<p class="error">'.$error_msg.'</p>'; ?>
                 <?php 
                 }
                 else
